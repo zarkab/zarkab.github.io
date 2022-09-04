@@ -158,6 +158,9 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+em { 
+  font-style: italic;
+}
 
 abbr[title],
 abbr[data-bs-original-title] {
