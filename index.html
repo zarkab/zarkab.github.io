@@ -191,13 +191,19 @@
                         <div class="flex-grow-1" style="text-align: justify;">
                             <h3 class="mb-0">Design and Development of Integrated-Isolated DC-DC Converter</h3>
                             <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                            <li>Analysis, design, and development of a 0.85 kW isolated integrated DC-DC converter aimed at minimizing the capacitor requirement. 
-                                Derived from a buck-based electronic capacitor and isolated DC-DC converter, the isolated integrated DC-DC converter diverts the 2nd order-frequency power ripple into the decoupling storage capacitance, while maintaining the desired output power. 
+                            <li>
+                                A single-phase voltage source converter and three-phase phase-modular AC-DC converter have the problem of high DC-link capacitor requirement. 
+                                In this work, a novel 1 kW SiC-MOSFETs based hybrid isolated DC-DC converter was developed, which is derived from an active power buffer and 
+                                dual-half bridge and can reduce the capacitor requirement, while delivering the desired output power to load without using any extra switch. 
+                                Additionally, the converter exhibits the advantage of zero-voltage switching (ZVS) within a specific range. The developed control technique 
+                                for a hybrid isolated DC-DC converter was verified by using a specially designed low-noise immunity current and voltage sensor board integrated
+                                with Texas Instruments microcontroller (TMS320f28379D).
                             </li>
                             <li>
-                                Furthermore, SiC based full-bridge DAB was developed and integrated with a unfolding bridge to perform active power decoupling in multilevel converters, which have applications in ultra-fast EV charging stations, large-scale solar PV systems, railway traction system
-                                and split-battery energy storage system is currently being investigated.                                
-                            </li>
+                                SiC-based full-bridge-based hybrid DC-DC converter was developed to perform active power buffering in multilevel converters, which have applications
+                                in ultra-fast EV charging stations, large-scale solar PV systems, railway traction systems and split-battery energy storage systems. With minimal switch 
+                                requirement and folder/ unfolder concept, the derived output power was maintained with a low DC-link capacitor requirement.
+                                </li>
                             <div style="text-align: center;">
                             <img src="P1.png" alt="Project Image" style="width: 15cm; height: 5cm; object-fit: scale-down; object-position: center;">
                             </div>  
@@ -209,14 +215,17 @@
                         <div class="flex-grow-1" style="text-align: justify;">
                             <h3 class="mb-0">Control and Modulation Strategies for buck-based Electronic Capacitor</h3>
                             <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                            <li> Developed a control strategy for 1kW SiC based electronic capacitor of which entitles
-                                the design of a faster decoupling control in CRM modulation, while ensuring the system
-                                stability and efficiency during dynamic periods</li>
+                            <li> 
+                            In this project, a novel control method for 500W SiC MOSFET based EC converter was proposed, which entitles the design of a faster decoupling control, while ensuring the system stability
+                            and efficiency during dynamic periods. This control facilitates the rapid adjustment of decoupling capacitor voltage with change in output power. Although the
+                            developed control results in higher robustness and improved transient response, the original dynamics of the system remain unaffected.
+                            </li>
                             <li>
-                                A hybrid continuous and critical conduction mode which minimizes power loss at-
-                                tributed to buck-based electronic capacitor, over a wide power range, making it suit-
-                                able for high-power applications. The modulation technique was verified by using
-                                specially designed low-noise immunity current senor board integrated with Texas Instruments microcontroller (TMS320F28379D).
+                                In this project, a hybrid continuous and critical conduction mode (HyCCM) modulation technique was developed which minimizes power loss attributed to 
+                                buck-based electronic capacitor (EC), over a wide power range. While operating the silicon-carbide (SiC) MOSFETs based ECs, the developed HyCCM technique 
+                                dynamically operates in soft-switched CRM and hard-switching CCM within a one double-line frequency cycle, based on the DC load current. As a result, power 
+                                loss attributed to EC is minimized over a wide power range, making it suitable for high-power applications.
+
                             </li>
                                 <div style="text-align: center;">
                                      <img src="P2.png" alt="Project Image" style="width: 15cm; height: 5cm; object-fit: scale-down; object-position: center;">
@@ -229,14 +238,16 @@
                         <div class="flex-grow-1" style="text-align: justify;">
                             <h3 class="mb-0">Multi-functional Integrated PMSM based On-board Charger</h3>
                             <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                            <li> A higher gravimetric and volumetric power density in the on-board charger was attained by employing a integrating set of components
+                            <li> A higher gravimetric and volumetric power density in the on-board charger was attained by employing an integrating set of components
                                 for charging the HV battery, LV battery, and traction purposes. A permanent magnet synchronous motor (PMSM)- based on-board integrated 
                                 electric vehicle (OBIEV) charger with AC winding currents, has issues of instability, torque production, increased current ripple, and EMI due to
                                 varying winding inductance. </li>
-                            <li>
-                                An novel OBIEV charger was proposed where, the components employed for charging a LV battery were reutilized for active power decoupling in grid connected mode.
-                                An improved tri-loop adaptive control and variable frequency modulation was proposed for input power quality and EMI improvement for integrated 
-                                charger. The control and modulation techniques were verified using Ansys Maxwell and MATLAB. Circuit verification was done using 1kW IGBT based hardware setup. 
+                            <li> In this project, an integrated on-board charger is presented that maintains input power quality and synchronously performs active power decoupling with
+                                same components reutilized for charging LV battery. In order to limit the increase of winding current ripple, grid current total-harmonic distortion, and EMI,
+                                the inductance variation behaviour is studied. To mitigate these adverse effects, a variable switching frequency pulse-width modulation (PWM)-based modulation
+                                strategy is developed. Moreover, an adaptive PR controller for each motor winding current control is implemented for zero torque production and system 
+                                stability in charging mode. This control/ modulation approach allows for the stable operation of the integrated on-board charger during the charging process.
+                                Circuit verification was done using 1kW IGBT based hardware setup. 
                             </li>
                                 <div style="text-align: center;">
                                      <img src="P3.png" alt="Project Image" style="width: 20cm; height: 8cm; object-fit: scale-down; object-position: center;">
@@ -256,8 +267,9 @@
                                 is achieved by MMPC algorithm by reconstructing the dynamic model of the APD circuit based on Euler’s approximation. 
                             </li>
                             <li>
-                                Formulated a control technique based on adaptive non-linear current observer for current sensorless operation of
-                                series-stacked buffer.
+                                To achieve improved performance and current-sensorless control, this work presented an adaptive non-linear current observer (ANCO) based control
+                                for series-stacked buffer. Without using any differential functions, ANCO based control technique for SSB control is also able to provide disturbance 
+                                rejection caused by parameter mismatch. Moreover, due ANCO’s noise filtering capability, reliable performance of SSB is facilitated.
                             </li>
                                 <div style="text-align: center;">
                                      <img src="P4.png" alt="Project Image" style="width: 20cm; height: 8cm; object-fit: scale-down; object-position: center;">
